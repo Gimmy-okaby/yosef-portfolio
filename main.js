@@ -12472,7 +12472,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var DRIVE = "https://drive.google.com/drive/folders/114W1cxL1LmlI_HCxeurdzemDZ95yZG6g";
   var PRICE = 350;
   var OFFER_PRICE = 300;
-  var OFFER_END = (/* @__PURE__ */ new Date("2026-11-27T14:25:00+02:00")).getTime();
+  var OFFER_END = (/* @__PURE__ */ new Date("2026-11-27T23:59:59+02:00")).getTime();
   function useNow() {
     const [now, setNow] = (0, import_react30.useState)(() => Date.now());
     (0, import_react30.useEffect)(() => {
