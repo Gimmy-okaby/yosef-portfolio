@@ -12491,7 +12491,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   function App() {
     const now = useNow();
-    const left = OFFER_END - now;
+    const P3 = 2592e5; let left = OFFER_END - now; if (left <= 0) left = P3 - (now - OFFER_END) % P3;
     const live = left > 0;
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(cu, { lang: "ar", dir: "rtl", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "yz", children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("header", { className: "yz-hero", style: { backgroundImage: `url(${bg_29546714_default})` }, children: /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "yz-hero-in", children: [
@@ -12525,8 +12525,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             live && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("s", { children: PRICE })
           ] }),
           live && /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "yz-offer", children: "\u0633\u0639\u0631 \u0627\u0644\u0639\u0631\u0636 \u0644\u062D\u062F \u0627\u0644\u062C\u0645\u0639\u0629 27 \u0646\u0648\u0641\u0645\u0628\u0631." }),
-            null
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "yz-offer", children: "\u0633\u0639\u0631 \u0627\u0644\u0639\u0631\u0636 \u0644\u0641\u062A\u0631\u0629 \u0645\u062D\u062F\u0648\u062F\u0629." }),
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Countdown, { left })
           ] })
         ] })
       ] }),
